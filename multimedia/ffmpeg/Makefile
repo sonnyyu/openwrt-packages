@@ -322,7 +322,7 @@ endef
 define Package/libffmpeg-full
 $(call Package/libffmpeg/Default)
  TITLE+= (full)
- DEPENDS+= @BUILD_PATENTED +alsa-lib
+ DEPENDS+= @BUILD_PATENTED +alsa-lib +liblzma
  VARIANT:=full
 endef
 
