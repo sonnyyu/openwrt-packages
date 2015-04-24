@@ -322,11 +322,7 @@ endef
 define Package/libffmpeg-full
 $(call Package/libffmpeg/Default)
  TITLE+= (full)
-<<<<<<< HEAD
- DEPENDS+= @BUILD_PATENTED +alsa-lib +liblzma
-=======
  DEPENDS+= @BUILD_PATENTED +alsa-lib
->>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
  VARIANT:=full
 endef
 
@@ -399,10 +395,7 @@ FFMPEG_CONFIGURE:= \
 	--disable-mipsfpu \
 	\
 	--disable-dxva2 \
-<<<<<<< HEAD
-=======
 	--disable-lzma \
->>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
 	--disable-vaapi \
 	--disable-vda \
 	--disable-vdpau \

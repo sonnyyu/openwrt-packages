@@ -33,14 +33,10 @@ index 846f351..272856c 100644
 @@ -11,7 +11,7 @@ TMPDIR=$(test_tmpdir)
  TESTS_DIR="$SOURCE"/data
  ZSCANNER_TOOL="$BUILD"/zscanner-tool
- 
-<<<<<<< HEAD
--plan 69
-+plan 67
-=======
+
 -plan 71
 +plan 69
->>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
+
  
  mkdir -p "$TMPDIR"/includes/
  for a in 1 2 3 4 5 6; do

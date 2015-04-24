@@ -9,11 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=usbmuxd
 PKG_VERSION:=1.1.1
-<<<<<<< HEAD
-PKG_RELEASE:=2
-=======
 PKG_RELEASE:=3
->>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
 PKG_SOURCE_PROTO:=git
 
 PKG_MAINTAINER:=Lukasz Baj <l.baj@radytek.com>
@@ -35,11 +31,7 @@ define Package/usbmuxd
   CATEGORY:=Utilities
   TITLE:=USB multiplexing daemon
   URL:=http://www.libimobiledevice.org/
-<<<<<<< HEAD
-  DEPENDS:=+librt +libusb-1.0 +libusbmuxd +libcrypto +libopenssl +libimobiledevice
-=======
   DEPENDS:=+librt +libusb-1.0 +libusbmuxd +libopenssl +libimobiledevice
->>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
 endef
 
 define Package/usbmuxd/description
