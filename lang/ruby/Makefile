@@ -575,7 +575,7 @@ endef
 define Package/ruby-psych
 $(call Package/ruby/Default)
   TITLE+=YAML parser and emitter
-  DEPENDS:=ruby +ruby-bigdecimal +ruby-datetime +ruby-misc +ruby-enc
+  DEPENDS:=ruby +ruby-bigdecimal +ruby-datetime +ruby-misc +ruby-enc +libyaml
 endef
 
 define Package/ruby-psych/description
