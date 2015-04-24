@@ -127,7 +127,11 @@ CONFIGURE_ARGS+= \
 	--enable-openssl-compatibility \
 	--with-default-trust-store-dir=/etc/ssl/certs/ \
 	--disable-crywrap \
+<<<<<<< HEAD
 	--with-librt-prefix="$(STAGING_DIR)/"
+=======
+	--with-librt-prefix="$(LIBRT_ROOT_DIR)/"
+>>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
 
 ifneq ($(CONFIG_GNUTLS_EXT_LIBTASN1),y)
 CONFIGURE_ARGS += --with-included-libtasn1

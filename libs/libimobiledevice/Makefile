@@ -9,7 +9,11 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libimobiledevice
 PKG_VERSION:=1.2.0
+<<<<<<< HEAD
 PKG_RELEASE:=1
+=======
+PKG_RELEASE:=2
+>>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
 
 PKG_MAINTAINER:=Lukasz Baj <l.baj@radytek.com>
 PKG_LICENSE:=LGPL-2.1+
@@ -42,7 +46,11 @@ define Package/libimobiledevice
   $(call Package/libimobiledevice/Default)
   SECTION:=libs
   CATEGORY:=Libraries
+<<<<<<< HEAD
   DEPENDS:=$(ICONV_DEPENDS) +libplist +libusbmuxd +libopenssl +libcrypto
+=======
+  DEPENDS:=$(ICONV_DEPENDS) +libplist +libusbmuxd +libopenssl
+>>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
 endef
 
 define Package/libimobiledevice/description

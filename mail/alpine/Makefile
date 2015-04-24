@@ -9,7 +9,11 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=alpine
 PKG_VERSION:=2.20
+<<<<<<< HEAD
 PKG_RELEASE:=1
+=======
+PKG_RELEASE:=2
+>>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
 
 PKG_SOURCE_URL:=http://patches.freeiz.com/alpine/release/src/
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
@@ -44,7 +48,11 @@ endef
 define Package/alpine
 $(call Package/alpine/Default)
   TITLE+= (with OpenSSL support)
+<<<<<<< HEAD
   DEPENDS+= +libcrypto +libopenssl
+=======
+  DEPENDS+= +libopenssl
+>>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
   VARIANT:=ssl
 endef
 

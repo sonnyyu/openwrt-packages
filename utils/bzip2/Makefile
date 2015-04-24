@@ -9,7 +9,11 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=bzip2
 PKG_VERSION:=1.0.6
+<<<<<<< HEAD
 PKG_RELEASE:=1
+=======
+PKG_RELEASE:=2
+>>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://www.bzip.org/$(PKG_VERSION)
@@ -52,13 +56,23 @@ define Package/bzip2/description
 	data compressor. This package provides the binary.
 endef
 
+<<<<<<< HEAD
 TARGET_CFLAGS += $(FPIC)
+=======
+TARGET_CFLAGS += \
+	$(FPIC) \
+	$(TARGET_LDFLAGS)
+
+>>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
 CONFIGURE_ARGS += --prefix=/usr
 
 MAKE_FLAGS += \
 	-f Makefile-libbz2_so \
 	CFLAGS="$(TARGET_CFLAGS)" \
+<<<<<<< HEAD
 	LDFLAGS="$(TARGET_LDLAGS)" \
+=======
+>>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
 	all
 
 define Build/InstallDev

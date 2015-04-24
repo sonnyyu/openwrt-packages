@@ -68,7 +68,11 @@ endef
 define Package/python3-light
 $(call Package/python3/Default)
   TITLE:=Python $(PYTHON_VERSION) light installation
+<<<<<<< HEAD
   DEPENDS:=+python3-base +libffi +libbz2 +liblzma
+=======
+  DEPENDS:=+python3-base +libffi +libbz2
+>>>>>>> c3a822ef3d79bda29dfd70b99e2d7600355b8df2
 endef
 
 define Package/python3-light/description
